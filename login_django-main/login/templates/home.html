@@ -1,0 +1,20 @@
+<center><h1 style="color:greenyellow;">Code Gurukul App</h1></center>
+{% extends 'base.html' %}
+{% block body %}
+<form method="POST"> 
+  <style>
+    div {
+      background-image: url('ddlj.jpg');
+    }
+    </style>
+    {% csrf_token %}
+    {% include 'messages.html' %}
+    
+   
+        <div>
+          WELCOME 
+        </div>
+       <a href="/">Logout</a>
+</form>
+ 
+{% endblock %}
